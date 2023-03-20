@@ -25,7 +25,7 @@ public class Uber {
 		String ubicacionRecogida = solicitud.getUbicacionRecogida();
 		String destino = solicitud.getDestino();
 		int duracion = (int) (Math.random() * 30) + 10; // duración del viaje entre 10 y 40 minutos
-		double costo = Math.round(Math.random() * 10000) / 100.0; // costo del viaje entre 0 y 100.00 pesos
+		double costo = Math.round(Math.random() * 10000) / 100.000; // costo del viaje entre 0 y 100.000 pesos
 
 		Viaje viaje = new Viaje(ubicacionRecogida, destino, duracion, costo);
 		historialViajes.add(viaje);
